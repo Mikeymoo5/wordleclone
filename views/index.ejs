@@ -43,7 +43,7 @@
     </style>
 </head>
 <body>
-    <script type="text/javascript">var word = "<%= word %>";</script>
+    <script type="text/javascript">var word = "<%= locals.word || 'WORDS' %>";</script>
     <script type="text/javascript" src="/public/index.js"></script>
     <div class="center">
         <table>
