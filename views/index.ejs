@@ -4,102 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LibreWordle</title>
     <style>
-        td {
-            border: 1px solid rgb(200, 200, 200);
-            padding: 10px 20px;
-            text-align: center;
-
-        }
-
         table {
+            font-size: 20px;
+            text-align: center;
+            table-layout: fixed;
             border-collapse: collapse;
-            border: 2px solid black;
+            
         }
 
-        tr {
-            height: 50px;
+        .boardDiv {
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        #one .three {
-            background-color:rgba(50, 205, 50, 0.75);
+        .boardTable {
+            margin-left: auto;
+            margin-right: auto;
+            aspect-ratio: 5/6;
+            width: 20%;
+            height: 24%;
+        }
+        
+        .guessDiv {
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        #one .two {
-            background-color: rgb(255, 255, 0, 0.75);
+        .guessTable {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            height: 20px;
         }
-         
+
+        td {
+            border: 1px solid black;
+            aspect-ratio: 1/1;
+        }
+
         .center {
             margin-left: auto;
             margin-right: auto;
-            text-align: center;
         }
 
-        table {
-            margin-left: auto;
-            margin-right: auto;
-        }
+
     </style>
 </head>
 <body>
     <script type="text/javascript">var word = "<%= locals.word || 'WORDS' %>";</script>
     <script type="text/javascript" src="/public/index.js"></script>
     <div class="center">
-        <table>
-            <tr id="one">
-                <td class="one">W</td>
-                <td class="two">O</td>
-                <td class="three">R</td>
-                <td class="four">D</td>
-                <td class="five">S</td>
-            </tr>
-            <tr id="two">
-                <td class="one">W</td>
-                <td class="two">O</td>
-                <td class="three">R</td>
-                <td class="four">D</td>
-                <td class="five">S</td>
-            </tr>
-            <tr id="three">
-                <td class="one">W</td>
-                <td class="two">O</td>
-                <td class="three">R</td>
-                <td class="four">D</td>
-                <td class="five">S</td>
-            </tr>
-            <tr id="four">
-                <td class="one">W</td>
-                <td class="two">O</td>
-                <td class="three">R</td>
-                <td class="four">D</td>
-                <td class="five">S</td>
-            </tr>
-            <tr id="five">
-                <td class="one">W</td>
-                <td class="two">O</td>
-                <td class="three">R</td>
-                <td class="four">D</td>
-                <td class="five">S</td>
-            </tr>
-            <tr id="six">
-                <td class="one">W</td>
-                <td class="two">O</td>
-                <td class="three">R</td>
-                <td class="four">D</td>
-                <td class="five">S</td>
-            </tr>
-        </table>
+        <div class="boardDiv">
+            <table class="boardTable">
+                <tr id="one">
+                    <td class="one">W</td>
+                    <td class="two">O</td>
+                    <td class="three">R</td>
+                    <td class="four">D</td>
+                    <td class="five">S</td>
+                </tr>
+                <tr id="two">
+                    <td class="one">W</td>
+                    <td class="two">O</td>
+                    <td class="three">R</td>
+                    <td class="four">D</td>
+                    <td class="five">S</td>
+                </tr>
+                <tr id="three">
+                    <td class="one">W</td>
+                    <td class="two">O</td>
+                    <td class="three">R</td>
+                    <td class="four">D</td>
+                    <td class="five">S</td>
+                </tr>
+                <tr id="four">
+                    <td class="one">W</td>
+                    <td class="two">O</td>
+                    <td class="three">R</td>
+                    <td class="four">D</td>
+                    <td class="five">S</td>
+                </tr>
+                <tr id="five">
+                    <td class="one">W</td>
+                    <td class="two">O</td>
+                    <td class="three">R</td>
+                    <td class="four">D</td>
+                    <td class="five">S</td>
+                </tr>
+                <tr id="six">
+                    <td class="one">W</td>
+                    <td class="two">O</td>
+                    <td class="three">R</td>
+                    <td class="four">D</td>
+                    <td class="five">S</td>
+                </tr>
+            </table>
+        </div>
         <br>
-        <table>
-            <tr>
-                <td>W</td>
-                <td>O</td>
-                <td>R</td>
-                <td>D</td>
-                <td>S</td>
-            </tr>
-        </table>
+        <div class="guessDiv">
+            <table class="guessTable">
+                <tr>
+                    <td></td>
+                    <td>O</td>
+                    <td>R</td>
+                    <td>D</td>
+                    <td>S</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
